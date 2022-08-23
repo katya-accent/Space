@@ -1,0 +1,210 @@
+.MapComponent {
+    position: relative;
+    height: 22vh;
+}
+
+.MapComponent-container  {
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+
+@media screen and (min-width:200px) {
+    .MapComponent-container {
+        zoom: 0.3;
+        
+    }
+    .MapComponent {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (min-width:400px)  {
+    .MapComponent-container  {
+        zoom: 0.45;
+    }
+
+    .MapComponent {
+        margin-top: 130px;
+    }
+}
+
+@media screen and (min-width:500px)  {
+    .MapComponent-container  {
+        zoom: 0.6;
+    }
+
+    .MapComponent {
+        margin-top: 200px;
+    }
+}
+
+@media screen and (min-width:700px)  {
+    .MapComponent-container  {
+        zoom: 0.6;
+    }
+
+    .MapComponent {
+        margin-top: 180px;
+    }
+}
+
+
+.glow {
+ transition: 0.5s all;
+}
+
+.dim {
+ filter: grayscale();
+ transform: scale(0.7);
+ transition: 0.8s all;
+}
+
+.zoom {
+ transform: scale(1.7);
+ z-index: 10;
+}
+
+.MapComponent-katysirles-wrapper {
+    width: 70px;
+    margin: -10px;
+   }
+
+   
+.MapComponent-katysirles {
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    margin-top: -75px;
+    margin-left: -75px;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    animation: spin 10s linear infinite;
+}
+
+.MapComponent-mohdreza-wrapper {
+    z-index: 1;
+    width: 80px;
+    margin-left: -10px;
+    animation: spin 1.5s linear alternate-reverse infinite;
+   }
+   
+   
+.MapComponent-mohdreza {
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -125px;
+    margin-left: -125px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    animation: spin 60s linear reverse infinite;
+}
+
+.MapComponent-earth-wrapper {
+    z-index: 1;
+    width: 70px;
+    margin-left: 40px;
+}
+
+.MapComponent-earth {
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -200px;
+    margin-left: -200px;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    animation:spin 1s alternate-reverse infinite, spin 60s linear infinite;
+}
+
+.MapComponent-farnocchia-wrapper {
+    z-index: 1;
+    width: 80px;
+    margin-left: 90px;
+   }
+   
+   
+.MapComponent-farnocchia {
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -275px;
+    margin-left: -275px;
+    width: 550px;
+    height: 550px;
+    border-radius: 50%;
+    animation: spin 30s linear reverse infinite;
+}
+
+.MapComponent-geographos-wrapper {
+    z-index: 1;
+    width: 110px;
+    margin-left:110px;
+   }
+   
+.MapComponent-geographos {
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -350px;
+    margin-left: -350px;
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    animation: spin 105s linear reverse  infinite;
+}
+
+.MapComponent-jacoblemaire-wrapper {
+    z-index: 1;
+    width: 110px;
+    margin-left: 150px;
+   }
+
+   
+.MapComponent-jacoblemaire {
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -425px;
+    margin-left: -425px;
+    width: 850px;
+    height: 850px;
+    border-radius: 50%;
+    animation: spin 105s linear infinite;
+}
+
+
+@keyframes spin {
+    from { transform: rotate(0deg)}
+    to { transform: rotate(360deg)}
+}
+
+@keyframes bounce {
+    from { transform: translateX(20px)}
+    to { transform: translateX(-20px)}
+}
+
+@keyframes hot {
+    from { 
+        filter:saturate(3) brightness(120%)
+    }
+    to { 
+        filter:saturate(1) brightness(80%)
+    }
+}
+
+@keyframes cold {
+    from { transform: translateX(20px)}
+    to { transform: translateX(-20px)}
+}
+

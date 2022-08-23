@@ -1,0 +1,41 @@
+.PlanetInfo {
+    z-index: 100;
+    margin-top: -70px;
+    width: 530px;
+    height: 150px;
+}
+
+@media screen and (min-width:200px) {
+    .PlanetInfo {
+        zoom: 0.6;
+        margin-left: -30px;
+    }
+}
+
+@media screen and (min-width:400px)  {
+    .PlanetInfo  {
+        zoom: 0.7;
+    }
+}
+
+@media screen and (min-width:500px)  {
+    .PlanetInfo  {
+        zoom: 0.75;
+    }
+}
+
+@media screen and (min-width:700px)  {
+    .PlanetInfo  {
+        zoom: 0.9;
+    }
+}
+
+@media screen and (min-width:900px)  {
+    .PlanetInfo  {
+        zoom: 1;
+    }
+}
+
+.PlanetInfo p {
+    margin-bottom: 3px;
+}

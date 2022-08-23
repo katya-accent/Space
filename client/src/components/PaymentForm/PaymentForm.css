@@ -1,0 +1,14 @@
+.Payment-form-input {
+    height: 45px;
+    width: 350px;
+    background-color: #F1E0D4;
+}
+
+
+.Payment-form-input-group {
+    max-width: 500px;
+}
+
+.Payment-form-input-group label {
+    width: 200px;
+}

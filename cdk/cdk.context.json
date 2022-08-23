@@ -1,0 +1,89 @@
+{
+  "vpc-provider:account=745580839125:filter.tag:Name=NjaSharedVpc:region=eu-west-1:returnAsymmetricSubnets=true": {
+    "vpcId": "vpc-096ceb47bc09ac1dc",
+    "vpcCidrBlock": "10.0.0.0/16",
+    "availabilityZones": [],
+    "subnetGroups": [
+      {
+        "name": "public",
+        "type": "Public",
+        "subnets": [
+          {
+            "subnetId": "subnet-0bd4466c03500ec35",
+            "cidr": "10.0.0.0/22",
+            "availabilityZone": "eu-west-1a",
+            "routeTableId": "rtb-081e46b52307240a2"
+          },
+          {
+            "subnetId": "subnet-0932362b91848968e",
+            "cidr": "10.0.4.0/22",
+            "availabilityZone": "eu-west-1b",
+            "routeTableId": "rtb-0607369e4eeb7a677"
+          },
+          {
+            "subnetId": "subnet-09ed83179a3923414",
+            "cidr": "10.0.8.0/22",
+            "availabilityZone": "eu-west-1c",
+            "routeTableId": "rtb-0618a2fada45ec2a7"
+          }
+        ]
+      },
+      {
+        "name": "private",
+        "type": "Private",
+        "subnets": [
+          {
+            "subnetId": "subnet-0d32636ace85a2424",
+            "cidr": "10.0.12.0/22",
+            "availabilityZone": "eu-west-1a",
+            "routeTableId": "rtb-08d47bb4e9178b314"
+          },
+          {
+            "subnetId": "subnet-0d58fc6ee862bab76",
+            "cidr": "10.0.16.0/22",
+            "availabilityZone": "eu-west-1b",
+            "routeTableId": "rtb-019e6f51450a6f364"
+          },
+          {
+            "subnetId": "subnet-01374f3501f687169",
+            "cidr": "10.0.20.0/22",
+            "availabilityZone": "eu-west-1c",
+            "routeTableId": "rtb-038d5f6c03621cf00"
+          }
+        ]
+      },
+      {
+        "name": "isolated",
+        "type": "Isolated",
+        "subnets": [
+          {
+            "subnetId": "subnet-0a86d32554dfa94a6",
+            "cidr": "10.0.24.0/22",
+            "availabilityZone": "eu-west-1a",
+            "routeTableId": "rtb-04bdb34c8964c1b55"
+          },
+          {
+            "subnetId": "subnet-02a9752dc7e74f679",
+            "cidr": "10.0.28.0/22",
+            "availabilityZone": "eu-west-1b",
+            "routeTableId": "rtb-03f70999e0dc06e63"
+          },
+          {
+            "subnetId": "subnet-0eb5717121ff2d86c",
+            "cidr": "10.0.32.0/22",
+            "availabilityZone": "eu-west-1c",
+            "routeTableId": "rtb-0deb96889afe4a327"
+          }
+        ]
+      }
+    ]
+  },
+  "security-group:account=745580839125:region=eu-west-1:securityGroupName=Nja-Shared-Security-Group:vpcId=vpc-096ceb47bc09ac1dc": {
+    "securityGroupId": "sg-0ca1738f6b54b5a9c",
+    "allowAllOutbound": false
+  },
+  "hosted-zone:account=745580839125:domainName=infinityworks.academy:region=eu-west-1": {
+    "Id": "/hostedzone/Z0843386LGHCZ4H7HHXE",
+    "Name": "infinityworks.academy."
+  }
+}

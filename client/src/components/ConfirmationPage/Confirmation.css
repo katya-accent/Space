@@ -1,0 +1,25 @@
+.logo {
+    width: 200px;
+    height: 200px;
+    filter: grayscale();
+    transition: all 0.5s;
+}
+
+.infiniRocket-logo {
+    margin-top: -50px;
+    width: 300px;
+    height: 300px;
+    filter: grayscale();
+    transition: all 0.5s;
+}
+
+.infiniRocket-logo:hover {
+    filter: none;
+}
+
+
+
+.logo:hover {
+    filter: none;
+}
+

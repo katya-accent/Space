@@ -1,0 +1,41 @@
+version: "3"
+
+services:
+
+  postgres:
+    container_name: infinispace-db
+    build:
+      context: ./postgresDB/db-scripts
+      dockerfile: Dockerfile
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=mysecretpassword
+
+  api:
+    container_name: infinispace-api
+    build: ./api
+    volumes:
+      - type: bind
+        source: ./api/src
+        target: /api/src
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_PASSWORD=mysecretpassword
+    ports:
+      - "8080:8080"
+
+  frontend:
+    container_name: infinispace-frontend
+    build: ./client
+    volumes:
+      - type: bind
+        source: ./client/src
+        target: /client/src
+    ports:
+      - "3000:3000"
+    environment:
+      - REACT_APP_API_ADDRESS=http://localhost:8080
+  
+
+
